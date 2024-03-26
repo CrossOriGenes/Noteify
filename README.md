@@ -61,8 +61,7 @@ If deploying to heroku this does not need to be run since it is handled by the h
 - #### `app.js` - Defines npm behaviors and packages for the client
 - #### `extras` - An additional rough text file for storing info
 - #### `stickynotes.json` - The data file for storing notes database
-#### `package.json` - Defines npm behaviors like the scripts defined in the next section of the README
-
+#### `.gitignore` - Tells git which files to ignore
 #### `README` - This file!
 
 ## Learn More
