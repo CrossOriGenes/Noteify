@@ -1,0 +1,45 @@
+menu {
+    position: absolute;
+    display: flex;
+    width: 6.5rem;
+    bottom: 0rem;
+    right: -0.3rem;
+    background: aliceblue;
+    padding: 0.4rem 0;
+    box-shadow: 10px 10px 29px 0px rgba(0, 0, 0, 0.48);
+    border-radius: 3px;
+    transform-origin: right bottom;
+}
+
+.show-menu {
+    position: relative;
+}
+
+menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+menu ul li {    
+    display: inline-flex;
+    align-items: center;
+    line-height: 1.5rem;
+    padding: 0.3rem 0.65rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+menu ul li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+menu ul li i {
+    margin-right: 0.3rem;
+}
+
+menu ul li span,
+menu ul li i {
+    font-size: 1.1rem !important;
+    color: #000;
+}

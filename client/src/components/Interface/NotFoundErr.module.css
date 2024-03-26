@@ -1,0 +1,19 @@
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem auto;
+    width: 50rem;
+    height: 30rem;
+}
+
+.main-wrapper img {
+    height: 30rem;
+}
+
+.main-wrapper h3 {
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+    font-family: monospace;
+    color: salmon;
+}

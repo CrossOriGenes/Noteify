@@ -1,0 +1,35 @@
+.modal-form {
+    position: fixed;
+    width: 24rem;
+    min-height: 23rem;
+    background-color: #ffe9d6;
+    box-shadow: 10px 10px 29px 0px rgba(0, 0, 0, 0.48);
+    border-radius: 7px;
+}
+
+.popup {
+    padding: 0.4rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.popup header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -0.2rem 0.2rem 1.1rem 0.2rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid #777;
+    color: #455474;
+}
+
+.popup header i {
+    display: flex;
+    font-size: 1.5rem;
+    color: #000;
+    cursor: pointer;
+}
+
+
+
+
+

@@ -1,0 +1,49 @@
+/*
+ * code to connect MySQL server to backend
+*/
+const db = mysql.createConnection({
+    host: process.env.HOST,
+    user: process.env.USER,
+    password: process.env.PASSWORD,
+    database: process.env.DATABASE_NAME
+});
+
+db.connect(error => {
+    if (error) {
+        console.error(error);
+    } else {
+        console.log("MySQL connected!");
+    }
+});
+
+
+
+/*
+* Code to open confirm to edit / delete prompt
+*/
+const promptContent =
+    props.promptType === "delete" ? (
+      <>
+        <header style={{ backgroundColor: "#ff9c90" }}>
+          <h4>Fatal !</h4>
+        </header>
+        <div className={classes["modal-text"]}>
+          <i style={{ color: "#ff6a00" }}>
+            <FaCircleExclamation />
+          </i>
+          <p>Are you sure to delete the note? This action can't be undone!</p>
+        </div>
+      </>
+    ) : (
+      <>
+        <header style={{ backgroundColor: "#7fea1a" }}>
+          <h4>Confirm ?</h4>
+        </header>
+        <div className={classes["modal-text"]}>
+          <i style={{ color: "#0a7926" }}>
+            <FaCircleQuestion />
+          </i>
+          <p>Do you want to modify the note?</p>
+        </div>
+      </>
+    );

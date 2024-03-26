@@ -1,0 +1,88 @@
+.modal {
+    position: fixed;
+    min-width: 27rem;
+    background-color: #fffcfa;
+    box-shadow: 10px 10px 29px 0px rgba(0, 0, 0, 0.48);
+    border-radius: 6px;
+}
+
+.modal .popup {
+    padding: 0.8rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.popup header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: -0.5rem 1rem 0.5rem -0.5rem;
+    padding: 0.4rem 0.7rem;
+    width: 103.5%;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.popup header h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #8d012d;
+}
+
+.popup .modal-text {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.modal-text i {
+    font-size: 2.2rem;
+    margin-right: 0.5rem;
+}
+
+.modal-text p {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+}
+
+.popup .modal-actions {
+    position: relative;
+    display: flex;
+    margin-top: 1rem;
+    gap: 0.5rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.modal-actions button {
+    padding: 0.4rem 1rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    outline: none;
+    border: 2px solid #3a4b6d;
+    background-color: #3a4b6d;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.modal-actions .declineBtn {
+    color: #3a4b6d;
+    background-color: transparent;
+}
+
+.modal-actions button:hover,
+.modal-actions .declineBtn:hover {
+    border: 2px solid #55688e;
+    background-color: #55688e;
+    color: #fff;
+}
+
+.modal-actions button:disabled {
+    border: 2px solid #6c7fa3;
+    background-color: #6c7fa3;
+    color: #ccc;
+    cursor: not-allowed;
+}

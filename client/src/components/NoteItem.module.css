@@ -1,0 +1,92 @@
+article {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50rem;
+    min-height: 30rem;
+    padding: 2rem;
+    margin: 3rem auto;
+    background-color: #5ca0c7;
+    box-shadow: 0 15px 18px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+}
+
+.note-details {
+    position: relative;
+}
+
+.note-details h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.note-details p {
+    font-size: 0.93rem;
+    line-height: 1.2rem;
+    text-align: left;
+    color: #ccc;
+    font-weight: 400;
+    margin-top: 0.7rem;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem -0.3rem -0.5rem -0.3rem;
+}
+
+.footer time {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #666;
+}
+
+.actions {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+
+.actions i {
+    display: flex;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #222;
+    padding: 0.2rem;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.actions:hover i:not(ul li i) {
+    color: #ccc;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* .actions button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem 0.8rem;
+    background-color: #ffcf3e;
+    border: 2px solid #ffcf3e;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.actions button:hover {
+    background-color: #ffdc74;
+    border-color: #ffdc74;
+}
+
+.actions button i {
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #222;
+} */

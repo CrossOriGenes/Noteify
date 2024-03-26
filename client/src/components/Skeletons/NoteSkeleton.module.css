@@ -1,0 +1,33 @@
+.card {
+    position: relative;
+    width: 15rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 4px;
+    padding: 0.75rem;
+    background: #e1e1e126;
+    box-shadow: 10px 10px 29px 0px rgba(0, 0, 0, 0.48);
+}
+
+.card .content {
+    position: relative;
+}
+
+.content h4 {
+    font-size: 1.5rem;
+    width: 50%;
+}
+
+.content p {
+    margin-top: 1rem;
+}
+
+.card .footnote {
+    position: relative;
+}
+
+.footnote em {
+    font-size: 0.75rem;
+}
