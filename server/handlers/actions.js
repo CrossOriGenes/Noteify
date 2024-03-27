@@ -1,4 +1,4 @@
-const { v4: generateId } = require('uuid');
+const { v4: generateNoteId } = require('uuid');
 const { NotesNotFoundError } = require('../utils/errors');
 const { writeData, readData } = require('./file-actions');
 
@@ -25,7 +25,7 @@ async function getNoteById(id) {
 async function createNewNote(data) {
     const storedData = await readData();
     storedData.notes.push({
-        id: generateId(),
+        id: generateNoteId(),
         timestamp: new Date().toLocaleString(),
         ...data
     });
