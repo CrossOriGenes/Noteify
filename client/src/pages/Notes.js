@@ -4,32 +4,6 @@ import NotesList from "../components/NotesList";
 import NoteSkeleton from "../components/Skeletons/NoteSkeleton";
 import { Suspense } from "react";
 
-// const DUMMY_NOTES = [
-//     {
-//         id: "a1",
-//         title: "Text",
-//         description: "Description about the notes text goes here...",
-//         timestamp: "5-3-2024 12:33:45 PM",
-//     },
-//     {
-//         id: "a2",
-//         title: "Text",
-//         description: "Description about the notes text goes here...",
-//         timestamp: "5-3-2024 12:33:45 PM",
-//     },
-//     {
-//         id: "a3",
-//         title: "Text",
-//         description: "Description about the notes text goes here...",
-//         timestamp: "5-3-2024 12:33:45 PM",
-//     },
-//     {
-//         id: "a4",
-//         title: "Text",
-//         description: "Description about the notes text goes here...",
-//         timestamp: "5-3-2024 12:33:45 PM",
-//     },
-// ];
 
 const NotesPage = (props) => {
     const { notesList } = useLoaderData();
