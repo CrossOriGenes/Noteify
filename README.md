@@ -59,7 +59,6 @@ If deploying to heroku this does not need to be run since it is handled by the h
     - #### `App.css` - These contains all global css codes and selectors
     - #### `App.js` - This is what renders all of our browser routes and different views
     - #### `index.js` - This is what renders the react app by rendering App.js, should not change
-- #### `.gitignore` - Tells git which files to ignore
 - #### `package.json` - Defines npm behaviors and packages for the client
 #### `server` - Holds the server application
 - #### `handlers` - This holds our all and every action methods defined
