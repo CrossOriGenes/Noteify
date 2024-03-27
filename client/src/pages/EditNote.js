@@ -9,7 +9,6 @@ import NoteForm from "../components/NoteForm";
 import classes from "../components/FormPrompt.module.css";
 
 const EditNote = () => {
-    // const { note } = useRouteLoaderData('note-details');
     const { note } = useLoaderData();
     const [isOpen, setIsOpen] = useState(true);
     const navigate = useNavigate();
@@ -39,7 +38,6 @@ const EditNote = () => {
                                         <NoteForm
                                             method="PUT"
                                             note={noteData}
-                                        // onSubmit={submitStateHandler} 
                                         />
                                     }
                                 </Await>
@@ -48,7 +46,6 @@ const EditNote = () => {
                     </Modal>
                 }
             </AnimatePresence>
-
         </>
     );
 }
