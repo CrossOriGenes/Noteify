@@ -9,31 +9,18 @@ import classes from '../components/Notes.module.css';
 
 const HomePage = () => {
     const [open, setOpen] = useState(false);
-    // const [isSubmitting, setIsSubmitting] = useState(false);
-
+    
     function addNewNoteCardHandler() {
         setOpen(true);
     }
-
     function closePopupHandler() {
         setOpen(false);
     }
 
-    // function submitStateHandler(currentState) {
-    //     if (currentState) {
-    //         setIsSubmitting(true);
-    //     }
-    // }
-
     return (
         <>
             <AnimatePresence>
-                {open &&
-                    <AddNotePopup
-                        onClose={closePopupHandler}
-                    // onSubmit={submitStateHandler}
-                    />
-                }
+                {open && <AddNotePopup onClose={closePopupHandler} />}
             </AnimatePresence>
             <div className={classes["create-new-note"]}>
                 <div className={classes["add-btn"]} onClick={addNewNoteCardHandler}>
@@ -41,8 +28,8 @@ const HomePage = () => {
                 </div>
                 <strong>Add new note</strong>
             </div>
-            <div className={classes['redirect-actions']}>
-                <Link to='notes'>
+            <div className={classes["redirect-actions"]}>
+                <Link to="notes">
                     <strong>See created notes</strong>
                 </Link>
             </div>
