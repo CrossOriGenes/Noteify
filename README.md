@@ -10,7 +10,14 @@ This project does not have a database connection setup.
 ## Getting Started
 This repository aims to assist you in beginning work on a JERN stack application for web deployment with a solid file structure as a foundation. 
 
-Since this project will hold both the client application and the server application there will be node modules in two different places. First run `npm install` from the root. After this you will run `npm run-script install-all` from the root. From now on run this command anytime you want to install all modules again. This is a script we have defined in package.json.
+Since this project will hold both the client application and the server application there will be node modules in two different places. After downloading this project file extract the root folder, navigate to the path in terminal:
+- Command Prompt for Windows
+- Terminal for Mac
+- Bash for Linux, or
+- press _**Ctrl + `**_ in VScode to open its own terminal window.
+   
+run `npm install` from both the directives seperately and the node modules folder alongwith all other dependencies gets installed automatically.
+Now run `npm start` from both the client and server to launch the development.
 
 
 ## Available Scripts
